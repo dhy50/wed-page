@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: 
+                #ffe6ec, /* soft pink background color */
+                linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%),
+                url('hyy/love-background.jpg') no-repeat center center fixed;
+            background-blend-mode: lighten;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h1 {
+            color: #ff4b6e;
+            text-shadow: 0 2px 8px #ffd6e0;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .heart {
+            color: #ff4b6e;
+            text-shadow: 0 2px 8px #ffd6e0;
+            font-size: 50px;
+            animation: pulse 1.5s infinite, floatHeart 3s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        @keyframes floatHeart {
+            0%, 100% { transform: translateY(0);}
+            50% { transform: translateY(-18px);}
+        }
+        .message {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #333;
+        }
+        .media-container {
+            margin: 20px 0;
+        }
+        video, audio {
+            width: 100%;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .zigzag-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .zigzag-row {
+            background: linear-gradient(90deg, #ffe6fa 0%, #e6f7ff 100%);
+            border-radius: 18px;
+            box-shadow: 0 2px 12px #ffd6e055;
+            padding: 24px 0;
+        }
+        .zigzag-row.left {
+            justify-content: flex-start;
+        }
+        .zigzag-row.right {
+            justify-content: flex-end;
+        }
+        .zigzag-row img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-60px);}
+            to { opacity: 1; transform: translateX(0);}
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(60px);}
+            to { opacity: 1; transform: translateX(0);}
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .zigzag-row.left .animated-img {
+            animation: fadeInLeft 1.2s ease;
+        }
+        .zigzag-row.right .animated-img {
+            animation: fadeInRight 1.2s ease;
+        }
+        .animated-caption {
+            animation: fadeInUp 1.2s ease;
+        }
+        .animated-img {
+            transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.4s;
+        }
+        .animated-img:hover {
+            transform: scale(1.08) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(231, 76, 60, 0.25), 0 2px 8px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+        .animated-caption {
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+        .animated-caption:hover {
+            background: #e74c3c;
+            color: #fff;
+            box-shadow: 0 4px 24px #e74c3c55;
+            cursor: pointer;
+        }
+    
+  /* ✅ Responsive Media Queries for iPhone 15 and Android Phones */
+  @media screen and (max-width: 480px) {
+      .container {
+          padding: 20px;
+          max-width: 95%;
+      }
+
+      h1 {
+          font-size: 2em;
+      }
+
+      .heart {
+          font-size: 36px;
+      }
+
+      .message {
+          font-size: 1em;
+      }
+
+      .zigzag-row img {
+          max-width: 100%;
+      }
+
+      .animated-caption {
+          font-size: 1em;
+          padding: 8px 12px;
+      }
+
+      video, audio {
+          width: 100%;
+      }
+
+      img {
+          max-width: 100% !important;
+      }
+
+      .lovely-lines {
+          font-size: 1em;
+          padding: 0 10px;
+      }
+  }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is for my soulmate</h1>
+        <div class="heart">❤️</div>
+        <img src="hyy/Awesome Drawing Ideas for Kids - Mom's Got the Stuff.jpeg" alt="Apology Image" style="max-width: 200px; margin: 20px auto; display: block;">
+        
+        <div class="message">
+            <p>You are the light that brightens my darkest days and the reason my heart smiles.</p>
+            <p>Thank you for being my soulmate,my girl friend, my close friend, and my everything. I cherish you more than words can say.</p>
+        </div>
+        <img src="hyy/download (1).jpeg" alt="Extra Image 1" style="max-width: 150px; margin: 10px auto; display: block;">
+
+        <div class="media-container">
+            <video controls>
+                <source src="hyy/Mention%20your%20soulmate%20%3BYou%20are%20more%20than%20a%20soulmate.You%20are%20a%20piece%20of%20my%20soul.Follow%20%40fractured.euphony%20for%20more%3B%23trending%20%23viral%20%23reels.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <img src="hyy/WhatsApp Image 2025-05-15 at 20.39.56_1649492e.jpg" alt="Audio Image" style="max-width: 120px; margin: 0 auto 10px auto; display: block;">
+            <audio controls>
+                <source src="hyy/Dil tu jaan tu ...love lyrics aesthetic.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <p style="text-align: center; font-size: 1.2em; color: #e74c3c; margin-top: 30px; background-color: rgba(255, 192, 203, 0.7); padding: 20px; border-radius: 15px;">
+        You are the most beautiful part of my life, and every moment with you is a cherished memory.
+    </p>
+    <img src="hyy/WhatsApp Image 2025-05-15 at 20.39.49_026aece4.jpg" alt="Extra Image 2" style="max-width: 400px; width: 100%; margin: 20px auto; display: block; background-color: rgba(255, 192, 203, 0.1);">
+
+    <div class="lovely-lines" style="text-align:center; color:#e74c3c; font-size:1.2em; margin: 30px 0 10px 0;">
+        <p>You are my sunshine on the cloudiest days.</p>
+        <p>With you, every moment is a beautiful memory in the making.</p>
+        <p>Your love fills my heart with endless happiness.</p>
+        <p>I am grateful for every smile, every hug, and every moment with you.</p>
+        <p>You are not just my soulmate, you are my dream come true.</p>
+    </div>
+
+    <div class="zigzag-container">
+        <div class="zigzag-row left" style="background-color: rgba(255, 230, 236, 0.7); padding: 20px; border-radius: 15px; margin: 30px 0;">
+            <div>
+                <img class="animated-img" src="hyy/WhatsApp Image 2025-05-15 at 20.39.00_93d8b74a.jpg" alt="Image 1">
+                <p class="animated-caption" style="
+                    text-align: center;
+                    color: #e74c3c;
+                    margin-top: 12px;
+                    font-size: 1.25em;
+                    font-family: 'Brush Script MT', cursive, sans-serif;
+                    background: rgba(255, 255, 255, 0.7);
+                    padding: 10px 18px;
+                    border-radius: 16px;
+                    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.08);
+                    text-shadow: 1px 1px 6px #fff, 0 2px 4px #e74c3c33;
+                ">
+                    Every moment with you is a treasure.
+                </p>
+            </div>
+        </div>
+        <div class="zigzag-row right" style="background-color: rgba(255, 230, 236, 0.7); padding: 20px; border-radius: 15px; margin: 30px 0;">
+            <div>
+                <img class="animated-img" src="hyy/WhatsApp Image 2025-05-15 at 20.39.02_e808fc1f.jpg" alt="Image 2">
+                <p class="animated-caption" style="
+                    text-align: center;
+                    color: #e74c3c;
+                    margin-top: 12px;
+                    font-size: 1.25em;
+                    font-family: 'Brush Script MT', cursive, sans-serif;
+                    background: rgba(255, 255, 255, 0.7);
+                    padding: 10px 18px;
+                    border-radius: 16px;
+                    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.08);
+                    text-shadow: 1px 1px 6px #fff, 0 2px 4px #e74c3c33;
+                ">
+                    Your smile makes my world brighter.
+                </p>
+            </div>
+        </div>
+        <div class="zigzag-row left" style="background-color: rgba(255, 230, 236, 0.7); padding: 20px; border-radius: 15px; margin: 30px 0;">
+            <div>
+                <img class="animated-img" src="hyy/WhatsApp Image 2025-05-15 at 20.39.53_abc2e7b8.jpg" alt="Image 3">
+                <p class="animated-caption" style="
+                    text-align: center;
+                    color: #e74c3c;
+                    margin-top: 12px;
+                    font-size: 1.25em;
+                    font-family: 'Brush Script MT', cursive, sans-serif;
+                    background: rgba(255, 255, 255, 0.7);
+                    padding: 10px 18px;
+                    border-radius: 16px;
+                    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.08);
+                    text-shadow: 1px 1px 6px #fff, 0 2px 4px #e74c3c33;
+                ">
+                    With you, every day feels special and full of love.
+                </p>
+            </div>
+        </div>
+        <!-- Add more rows as needed -->
+    </div>
+</body>
+</html>
